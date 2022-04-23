@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100&family=Josefin+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-1: #191919;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Exo', sans-serif;
+    /* font-family: 'Josefin Sans', sans-serif; */
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/img/default.jpg');
+    /* background-color: #000;/  */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(30px) brightness(0.65);
+
+}
+
+.container {
+    z-index: 1;
+    width: 70%;
+    height: 100%;
+    min-width: 250px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>.column {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.column-1 {
+    width: 80%;
+}
+
+@media only screen and (min-width: 600px) {
+    .column-1 {
+        width: 40%;
+    }
+}
+
+.avatar {
+    width: 70%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 50px; box-shadow: 0px 0px 20px #0e0e0e29;
+}
+
+.name_txt {
+    margin-top: 10px;
+    color: #eee;
+    font-size: 150%;
+    text-shadow: 0px 0px 20px #0e0e0e;
+}
+
+.bio_txt {
+    color: #dcdcdc;
+    font-size: 100%;
+    text-shadow: 0px 0px 20px #0e0e0e98;
+}
+
+hr {
+    border: none;
+    border-left: 1px solid rgba(222, 222, 222, 0.322);
+    height: 20vh;
+    width: 1px;
+}
+
+.column-2 {
+    width: 20%;
+    align-items: center;
+
+}
+
+.icon {
+    height: 35px;
+    width: auto;
+    margin: 3px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+.icon:hover {
+    height: 40px;
+}
