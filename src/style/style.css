@@ -86,7 +86,14 @@ body {
     font-size: 100%;
     text-shadow: 0px 0px 20px #0e0e0e98;
 }
-
+@media only screen and (max-width: 600px) {
+    .name_txt {
+        font-size: 100%;
+    }
+    .bio_txt {
+        font-size: 80%;
+    }
+}
 hr {
     border: none;
     border-left: 1px solid rgba(222, 222, 222, 0.322);
